@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurse Dashboard</title>
+    <link rel="stylesheet" href="/static/nurse.css">
+    <link rel="stylesheet" href="/static/nurse.js">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Nurse Dashboard</h1>
+        </header>
+        <main class="main-content">
+            <form class="patient-form" id="patientForm">
+                <h2>Patient Details</h2>
+                <div class="form-group">
+                    <label for="patientName">Patient Name:</label>
+                    <input type="text" id="patientName" name="patientName" placeholder="Enter patient name" required>
+                </div>
+                <div class="form-group">
+                    <label for="bloodPressure">Blood Pressure:</label>
+                    <input type="text" id="bloodPressure" name="bloodPressure" placeholder="e.g., 120/80" required>
+                </div>
+                <div class="form-group">
+                    <label for="pulse">Pulse:</label>
+                    <input type="number" id="pulse" name="pulse" placeholder="e.g., 72" required>
+                </div>
+                <div class="form-group">
+                    <label for="spo2">SpO2:</label>
+                    <input type="number" id="spo2" name="spo2" placeholder="e.g., 98" required>
+                </div>
+                <div class="form-group">
+                    <label for="temperature">Temperature:</label>
+                    <input type="text" id="temperature" name="temperature" placeholder="e.g., 98.6°F" required>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+            <div class="output" id="output">
+                <h2>Patient Summary</h2>
+                <p id="outputContent">Enter the details and click submit to view the summary.</p>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

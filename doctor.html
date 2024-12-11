@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Landing Page</title>
+    <link rel="stylesheet" href="/static/doctor.css" >
+    <link rel="stylesheet" href="/static/doctor.js">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net;">
+</head>
+<body>
+    <header>
+        <h1>Patient Data Overview</h1>
+    </header>
+    <main>
+        <article class="patient-data">
+            <h2>Patient Records</h2>
+            <button id="print-button">Print Patient Data</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Patient Name</th>
+                        <th>Blood Pressure</th>
+                        <th>Pulse</th>
+                        <th>Spo2</th>
+                        <th>Temperature</th>
+                    </tr>
+                </thead>
+                <tbody id="patient-data-body">
+                    <!-- Patient data will be inserted here -->
+                </tbody>
+            </table>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2023 Doctor Landing Page</p>
+    </footer>
+    <script src="doctor.js" defer></script>
+</body>
+</html>
